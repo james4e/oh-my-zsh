@@ -55,6 +55,7 @@ alias gbsb='git bisect bad'
 alias gbsg='git bisect good'
 alias gbsr='git bisect reset'
 alias gbss='git bisect start'
+alias gbv='git branch -v'
 
 alias gc='git commit -v'
 alias gc!='git commit -v --amend'
@@ -79,6 +80,7 @@ alias gcp='git cherry-pick'
 alias gcpa='git cherry-pick --abort'
 alias gcpc='git cherry-pick --continue'
 alias gcs='git commit -S'
+alias gcu='git checkout unstable'
 
 alias gd='git diff'
 alias gdca='git diff --cached'
@@ -95,6 +97,9 @@ alias gfo='git fetch origin'
 
 function gfg() { git ls-files | grep $@ }
 compdef _grep gfg
+alias gfu='git fetch upstream'
+alias gfum='git fetch upstream master'
+alias gfuu='git fetch upstream unstable'
 
 alias gg='git gui citool'
 alias gga='git gui citool --amend'
@@ -183,6 +188,7 @@ alias gmom='git merge origin/master'
 alias gmt='git mergetool --no-prompt'
 alias gmtvim='git mergetool --no-prompt --tool=vimdiff'
 alias gmum='git merge upstream/master'
+alias gmuu='git merge upstream/unstable'
 
 alias gp='git push'
 alias gpd='git push --dry-run'
